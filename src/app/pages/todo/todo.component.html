@@ -1,0 +1,6 @@
+<div class="col-sm-6 col-sm-offset-3">
+
+  <app-todo-form (addTodo)="addTodo($event)"></app-todo-form>
+  <app-todo-list [todos]="(todos | async)" (toggleTodoComplete)="toggleTodoComplete($event)" (removeTodo)="removeTodo($event)"></app-todo-list>
+
+</div>

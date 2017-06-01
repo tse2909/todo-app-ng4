@@ -1,0 +1,15 @@
+<section *ngIf="todos.length > 0">
+  <ul class="todo-list">
+    <li *ngFor="let td of todos">
+      <div class="list-contain">
+        <input type="checkbox" (click)="toggleTodoComplete.emit(td)" [checked]="td.finish">
+        <label [class.label-finished]="td.finish">{{td.title}}</label>
+        <button class="destroy" (click)="removeTodo.emit(td)">X</button>
+      </div>
+    </li>
+  </ul>
+</section>
+
+<footer class="footer" *ngIf="todos.length > 0">
+    <span class="todo-count"><strong>{{todos.length}}</strong> {{todos.length == 1 ? 'item' : 'items'}}</span>
+</footer>

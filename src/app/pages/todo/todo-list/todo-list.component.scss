@@ -1,0 +1,30 @@
+.todo-list{
+    border:1px solid #ecf0f1;
+    list-style:none;
+    margin-top: 10px
+}
+
+.list-contain{
+    padding: 10px;
+    border-bottom: 1px solid #ecf0f1;
+}
+
+label{
+    font-size: 22px;
+    font-weight: 400;
+    margin-left: 10px;
+    color: #7f8c8d;
+}
+
+label.label-finished{
+    text-decoration: line-through;
+    font-size: 20px;
+    color: #bdc3c7;
+}
+.destroy{
+    border: none;
+    font-size: 16px;
+    color: #c0392b;
+    background: none;
+    font-weight: 800;
+}
